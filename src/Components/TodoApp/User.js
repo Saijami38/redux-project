@@ -11,26 +11,24 @@ export default function User() {
 
   return (
     <div>
-      <Col span={24}>
-        <Row>
-          <Col offset={1} span={8}>
-            <Card
-              style={{ textAlign: "left", backgroundColor: "#d7aefb" }}
-              //   #cbf0f8 , #fdcfe8 , #d7aefb
-              bodyStyle={{ textAlign: "left" }}
-              title="User.js"
-            >
-              {toDoList?.length > 0 ? (
-                toDoList.map((v) => (
-                  <li onClick={() => dispatch(removeTodo(v))}>{v}</li>
-                ))
-              ) : (
-                <h3> Users Empty</h3>
-              )}
-            </Card>
-          </Col>
-        </Row>
-      </Col>
+      <Row justify="center">
+        <Col xs={24} sm={20} md={16} lg={12} xl={20} xxl={15}>
+          <Card
+            style={{ textAlign: "left", backgroundColor: "#d7aefb" }}
+            title="User.js"
+          >
+            {toDoList?.length > 0 ? (
+              toDoList.map((v) => (
+                <li key={v} onClick={() => dispatch(removeTodo(v))}>
+                  {v}
+                </li>
+              ))
+            ) : (
+              <h3>Users Empty</h3>
+            )}
+          </Card>
+        </Col>
+      </Row>
     </div>
   );
 }

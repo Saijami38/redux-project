@@ -44,13 +44,13 @@ function App() {
 
       <Col span={24}>
         <Row justify={"space-between"}>
-          <Col span={8}>
+          <Col xs={24} sm={20} md={16} lg={12} xl={8} xxl={8}>
             <User />
           </Col>
-          <Col span={8}>
+          <Col xs={24} sm={20} md={16} lg={12} xl={8} xxl={8}>
             <Data />
           </Col>
-          <Col span={8}>
+          <Col xs={24} sm={20} md={16} lg={12} xl={8} xxl={8}>
             <TotalRecords />
           </Col>
         </Row>
