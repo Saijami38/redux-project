@@ -10,7 +10,7 @@ export default function User() {
   const { toDoList } = useSelector((state) => state.todos);
 
   return (
-    <div>
+    <div className="responsive">
       <Row justify="center">
         <Col xs={24} sm={20} md={16} lg={12} xl={20} xxl={15}>
           <Card

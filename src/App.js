@@ -44,13 +44,13 @@ function App() {
 
       <Col span={24}>
         <Row justify={"space-between"}>
-          <Col xs={24} sm={20} md={16} lg={12} xl={8} xxl={8}>
+          <Col xs={24} sm={20} md={16} lg={8} xl={8} xxl={8}>
             <User />
           </Col>
-          <Col xs={24} sm={20} md={16} lg={12} xl={8} xxl={8}>
+          <Col xs={24} sm={20} md={16} lg={8} xl={8} xxl={8}>
             <Data />
           </Col>
-          <Col xs={24} sm={20} md={16} lg={12} xl={8} xxl={8}>
+          <Col xs={24} sm={20} md={16} lg={8} xl={8} xxl={8}>
             <TotalRecords />
           </Col>
         </Row>
@@ -58,7 +58,9 @@ function App() {
 
       <h2>P2</h2>
       <br />
-      <SelectedObjects />
+      <Col xs={24} sm={20} md={16} lg={8} xl={8} xxl={8}>
+        <SelectedObjects />
+      </Col>
       <br />
 
       <Col style={{ padding: "5vw" }} span={24}>

@@ -1,5 +1,6 @@
 import React from "react";
 import { Row, Col, Card } from "antd";
+import "../../App.css";
 import { useSelector, useDispatch } from "react-redux";
 
 import { removeTodo } from "../../Redux/Actions/Todoactions";
@@ -10,7 +11,7 @@ export default function Data() {
   const { toDoList } = useSelector((state) => state.todos);
 
   return (
-    <div>
+    <div className="responsive">
       <Row justify="center">
         <Col span={24}>
           <Row>

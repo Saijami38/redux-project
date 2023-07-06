@@ -65,5 +65,43 @@ body {
   background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: 1.5;
-  font-family: -apple-system-body, BlinkMa  cSystemFont, sans-serif;
+  font-family: -apple-system-body, BlinkMa cSystemFont, sans-serif;
+}
+
+@media (max-width: 1024px) {
+  .responsive {
+    max-width: 80vw !important;
+    width: 100% !important;
+  }
+}
+
+/* Mobile Phones */
+@media (max-width: 480px) {
+  .responsive {
+    justify-content: center;
+    margin: 25px;
+    max-width: 80vw !important;
+    width: 100% !important;
+  }
+}
+
+/* Tablets */
+@media (min-width: 481px) and (max-width: 768px) {
+  .responsive {
+    /* styles for tablets */
+  }
+}
+
+/* Laptops */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .responsive {
+    /* styles for laptops */
+  }
+}
+
+/* Large Screens */
+@media (min-width: 1025px) {
+  .responsive {
+    /* styles for large screens */
+  }
 }
