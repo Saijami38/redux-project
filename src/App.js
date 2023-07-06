@@ -58,7 +58,7 @@ function App() {
 
       <h2>P2</h2>
       <br />
-      <Col xs={24} sm={20} md={16} lg={8} xl={8} xxl={8}>
+      <Col span={24}>
         <SelectedObjects />
       </Col>
       <br />

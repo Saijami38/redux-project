@@ -8,7 +8,7 @@ export default function SelectedObjects() {
   const { fruits, selectedFruit } = useSelector((state) => state.friuts);
 
   return (
-    <Col xs={24} sm={20} md={16} lg={12} xl={20} xxl={15}>
+    <Col span={24}>
       <center>
         {fruits?.map((fruit) => (
           <div
