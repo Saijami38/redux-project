@@ -79,7 +79,9 @@ function App() {
       <Col span={24}>
         <Row gutter={[16, 16]}></Row>
       </Col>
-      <h2>Redux-Persist</h2>
+      <Col span={24}>
+        <h2>Redux-Persist</h2>
+      </Col>
       <br />
       <SelectedNames />
       <br />
