@@ -15,9 +15,9 @@ export default function SelectedNames() {
         {fruits?.map((fruit) => (
           <div
             style={{
-              color: "#34a853",
+              color: "#000",
               maxWidth: "80vw",
-              background: fruit === selectedFruit ? "#e8eaed" : "white",
+              background: fruit === selectedFruit ? "#d7aefb" : "white",
               borderRadius: "5px",
               cursor: "pointer",
             }}
