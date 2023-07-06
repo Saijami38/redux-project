@@ -65,13 +65,13 @@ function App() {
 
       <Col style={{ padding: "5vw" }} span={24}>
         <Row gutter={[16, 16]}>
-          <Col offset={1} span={7}>
+          <Col offset={1} xs={24} sm={20} md={16} lg={8} xl={8} xxl={8}>
             <Render1 />
           </Col>
-          <Col span={7}>
+          <Col offset={1} xs={24} sm={20} md={16} lg={8} xl={8} xxl={8}>
             <Render2 />
           </Col>
-          <Col span={7}>
+          <Col offset={1} xs={24} sm={20} md={16} lg={8} xl={8} xxl={8}>
             <Render3 />
           </Col>
         </Row>
