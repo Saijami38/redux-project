@@ -88,13 +88,13 @@ function App() {
 
       <Col style={{ padding: "5vw" }} span={24}>
         <Row gutter={[16, 16]}>
-          <Col offset={1} span={7}>
+          <Col offset={1} xs={24} sm={20} md={16} lg={8} xl={8} xxl={8}>
             <Render4 />
           </Col>
-          <Col span={7}>
+          <Col offset={1} xs={24} sm={20} md={16} lg={8} xl={8} xxl={8}>
             <Render5 />
           </Col>
-          <Col span={7}>
+          <Col offset={1} xs={24} sm={20} md={16} lg={8} xl={8} xxl={8}>
             <Render6 />
           </Col>
         </Row>
@@ -102,7 +102,9 @@ function App() {
       <Col span={24}>
         <h2>Redux-API</h2>
         <Row gutter={[16, 16]}>
-          <HomePage />
+          <Col offset={1} xs={24} sm={20} md={16} lg={8} xl={8} xxl={8}>
+            <HomePage />
+          </Col>
         </Row>
       </Col>
     </div>

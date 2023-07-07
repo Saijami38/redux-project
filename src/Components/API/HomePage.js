@@ -18,6 +18,7 @@ export default function HomePage() {
         <Row justify={"space-between"}>
           <Col>
             <Table
+              style={{ width: "100%", overflowX: "auto" }}
               columns={[
                 {
                   width: "100px",
@@ -25,17 +26,22 @@ export default function HomePage() {
                   dataIndex: "id",
                 },
                 {
+                  width: "100px",
                   title: "TITLE",
                   dataIndex: "title",
                 },
                 {
                   title: "BODY",
                   dataIndex: "body",
+                  render: (body, record) => {
+                    return <Col span={24}>{body}</Col>;
+                  },
                 },
               ]}
               dataSource={data}
             />
-            <Col span={12}>
+            <br />
+            <Col span={24}>
               <Button
                 onClick={() => {
                   dispatch(handleCallApi());
