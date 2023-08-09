@@ -10,4 +10,4 @@ const UserSclice = createSlice({
   },
 });
 
-export { UserSclice };
+export default UserSclice;
