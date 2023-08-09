@@ -16,7 +16,7 @@ import Render4 from "./Components/Redux-Persist/Render4";
 import Render5 from "./Components/Redux-Persist/Render5";
 import Render6 from "./Components/Redux-Persist/Render6";
 import HomePage from "./Components/API/HomePage";
-import UserDetails from "./Components/toolkit/UserDetails";
+import UserDetails from "./Components/ReduxToolkit/UserDetails";
 
 // Separate components for each section
 const TitleSection = () => (
