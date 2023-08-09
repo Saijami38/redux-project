@@ -1,5 +1,5 @@
 import "./App.css";
-import { Col, Row } from "antd";
+import { Button, Col, Row } from "antd";
 import { Route, Routes, BrowserRouter as Router } from "react-router-dom";
 
 import Typed from "react-typed";
@@ -40,6 +40,9 @@ const TitleSection = () => (
       />
     </div>
     <h1 className="titleTyping1">Redux Working</h1>
+    <Button onClick={() => (window.location.pathname = "/toolkit")}>
+      Tool{" "}
+    </Button>
     <Col offset={7} span={12}>
       <Todo />
     </Col>
@@ -118,6 +121,7 @@ function App() {
     <Router>
       <Routes>
         <Route path="/" element={<TitleSection />} />
+        <Route path="/redux-project" element={<TitleSection />} />
         <Route path="/toolKit" element={<UserDetails />} />
       </Routes>
     </Router>
