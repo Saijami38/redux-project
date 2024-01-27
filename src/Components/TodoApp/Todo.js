@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Button, Row, Col, Input } from "antd";
+import "../../App.css";
 import { useDispatch } from "react-redux";
 
 import { handleSubmit } from "../../Redux/Actions/Todoactions";
@@ -15,8 +16,8 @@ export default function Todo() {
   };
   return (
     <div>
-      <Col span={24}>
-        <Row style={{ justifyItems: "center" }}>
+      <Col xs={24} sm={20} md={16} lg={12} xl={20} xxl={15}>
+        <Row gutter={[16, 16]} style={{ justifyItems: "center" }}>
           <Col span={18}>
             <Input
               style={{}}

@@ -1,5 +1,5 @@
 import React from "react";
-import { Button } from "antd";
+import { Button, Col } from "antd";
 import { useDispatch, useSelector } from "react-redux";
 import {
   selectedFruitNames,
@@ -10,30 +10,32 @@ export default function SelectedNames() {
   const { fruits, selectedFruit } = useSelector((state) => state.persistFriuts);
 
   return (
-    <center>
-      {fruits?.map((fruit) => (
-        <div
-          style={{
-            color: "#34a853",
-            maxWidth: "15vw",
-            background: fruit === selectedFruit ? "#e8eaed" : "white",
-            borderRadius: "5px",
-            cursor: "pointer",
+    <Col span={24}>
+      <center>
+        {fruits?.map((fruit) => (
+          <div
+            style={{
+              color: "#000",
+              maxWidth: "80vw",
+              background: fruit === selectedFruit ? "#d7aefb" : "white",
+              borderRadius: "5px",
+              cursor: "pointer",
+            }}
+            onClick={() => dispatch(selectedFruitNames(fruit))}
+          >
+            <h1>{fruit}</h1>
+          </div>
+        ))}
+        <Button
+          style={{ backgroundColor: "black", color: "white" }}
+          onClick={() => {
+            dispatch(resetPersistStore());
           }}
-          onClick={() => dispatch(selectedFruitNames(fruit))}
         >
-          <h1>{fruit}</h1>
-        </div>
-      ))}
-      <Button
-        style={{ backgroundColor: "black", color: "white" }}
-        onClick={() => {
-          dispatch(resetPersistStore());
-        }}
-      >
-        Reset Store
-      </Button>
-      <hr></hr>
-    </center>
+          Reset Store
+        </Button>
+        <hr></hr>
+      </center>
+    </Col>
   );
 }
